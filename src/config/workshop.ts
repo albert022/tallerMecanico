@@ -92,7 +92,7 @@ export const workshopConfig: WorkshopConfig = {
       description: "Cambios de aceite, filtros y revisiones generales.",
       iconName: "Wrench",
       imageUrl:
-        "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=800&q=80",
       whatsappMessage:
         "¡Hola! Quisiera solicitar una cotización y saber más detalles del servicio. (QRMOON) (Taller Mecánico RD)",
     },
@@ -173,7 +173,7 @@ export const workshopConfig: WorkshopConfig = {
       shortDescription:
         "Fluidos sintéticos, cambio de bujías de iridio y revisión multipunto de 35 puntos.",
       imageUrl:
-        "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80",
     },
     {
       id: "trabajo-4",
