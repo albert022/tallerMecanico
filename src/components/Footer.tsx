@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Wrench, Phone, MessageSquare, MapPin, Instagram, ShieldCheck, ExternalLink } from "lucide-react";
+import { Wrench, Phone, MessageSquare, MapPin, Instagram, ShieldCheck } from "lucide-react";
 import { workshopConfig } from "@/config/workshop";
 
 export default function Footer() {
@@ -114,7 +114,7 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Social Media: Clean icon buttons linking directly to profiles */}
+            {/* Social Media: Clean icon buttons */}
             <div className="pt-2">
               <span className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-2.5">
                 Síguenos en Redes:
@@ -145,27 +145,6 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* QRMOON Ecosystem / Related Pages */}
-        <div className="py-6 border-b border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-          <div className="flex items-center gap-2">
-            <span className="font-semibold text-white">Soluciones QRMOON:</span>
-          </div>
-          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
-            {workshopConfig.qrmoon.relatedPages.map((page) => (
-              <a
-                key={page.title}
-                href={page.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white transition-colors flex items-center gap-1 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800"
-              >
-                <span>{page.title}</span>
-                <ExternalLink className="w-3 h-3 text-slate-500" />
-              </a>
-            ))}
           </div>
         </div>
 

@@ -49,10 +49,6 @@ export interface WorkshopConfig {
   qrmoon: {
     brandName: string;
     websiteUrl: string;
-    relatedPages: Array<{
-      title: string;
-      url: string;
-    }>;
   };
   services: ServiceItem[];
   completedWorks: WorkProject[];
@@ -88,20 +84,6 @@ export const workshopConfig: WorkshopConfig = {
   qrmoon: {
     brandName: "QRMOON",
     websiteUrl: "https://qrmoon.com",
-    relatedPages: [
-      {
-        title: "Técnicos de aires acondicionados e inversores",
-        url: "https://climavolt-servicios-rd.asay2297.workers.dev",
-      },
-      {
-        title: "Salón de belleza",
-        url: "https://salondebelleza.asay2297.workers.dev",
-      },
-      {
-        title: "Barberías",
-        url: "https://barberia.asay2297.workers.dev",
-      },
-    ],
   },
   services: [
     {
