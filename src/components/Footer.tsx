@@ -156,7 +156,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-2">
             <span className="text-slate-400">
-              Desarrollado para <strong className="text-white">QRMOON</strong>
+              Desarrollado por <strong className="text-white">QRMOON</strong>
             </span>
           </div>
         </div>
