@@ -131,32 +131,39 @@ export default function BasicChatbot() {
 
   return (
     <>
-      {/* Floating Launcher Button */}
-      <div className="fixed bottom-20 left-4 sm:bottom-6 sm:left-auto sm:right-28 z-40">
+      {/* Floating Launcher Button (Bottom Left) */}
+      <div className="fixed bottom-20 left-4 sm:bottom-6 sm:left-6 z-40">
         {!isOpen && (
           <button
             type="button"
             onClick={() => setIsOpen(true)}
-            className="flex items-center gap-2.5 bg-slate-900 hover:bg-slate-800 text-white px-3 sm:px-4 py-2.5 sm:py-3 rounded-full shadow-2xl border border-slate-700 transition-all duration-300 hover:scale-105 group"
+            className="flex items-center gap-2.5 bg-slate-900 hover:bg-slate-800 text-white px-3.5 sm:px-4 py-2.5 sm:py-3 rounded-full shadow-2xl border border-slate-700 hover:border-red-500 transition-all duration-300 hover:scale-105 active:scale-95 group cursor-pointer select-none"
             aria-label="Abrir asistente de preguntas frecuentes"
           >
-            <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white flex-shrink-0">
-              <Bot className="w-4 h-4" />
+            <div className="relative">
+              <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 transition-transform">
+                <Bot className="w-4 h-4" />
+              </div>
+              <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-emerald-500 rounded-full ring-2 ring-slate-900" />
             </div>
             <div className="hidden sm:flex flex-col text-left">
-              <span className="text-xs font-bold leading-tight">Preguntas Frecuentes</span>
-              <span className="text-[10px] text-slate-400">Atención inmediata</span>
+              <span className="text-xs font-bold leading-tight group-hover:text-red-400 transition-colors">
+                Preguntas Frecuentes
+              </span>
+              <span className="text-[10px] text-slate-400 group-hover:text-slate-300 transition-colors">
+                Atención inmediata
+              </span>
             </div>
           </button>
         )}
       </div>
 
-      {/* Chatbot Window */}
+      {/* Chatbot Window (Bottom Left) */}
       {isOpen && (
         <div
           role="dialog"
           aria-label="Asistente de preguntas frecuentes"
-          className="fixed bottom-20 sm:bottom-24 left-3 right-3 sm:left-auto sm:right-6 z-50 w-auto sm:w-[390px] h-[520px] max-h-[80vh] bg-white rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden animate-in fade-in slide-in-from-bottom-5 duration-300"
+          className="fixed bottom-20 sm:bottom-24 left-4 sm:left-6 z-50 w-[92vw] sm:w-[390px] h-[520px] max-h-[80vh] bg-white rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden animate-in fade-in slide-in-from-bottom-5 duration-300"
         >
           {/* Header */}
           <div className="bg-slate-900 text-white p-4 flex items-center justify-between border-b border-slate-800 flex-shrink-0">
@@ -261,7 +268,7 @@ export default function BasicChatbot() {
                     key={q.id}
                     type="button"
                     onClick={() => handleSelectQuestion(q)}
-                    className="flex items-center gap-2.5 text-left p-2 rounded-xl text-xs font-semibold text-slate-700 bg-slate-50 hover:bg-red-50 hover:text-red-700 hover:border-red-200 border border-slate-200/80 transition-all duration-150 group"
+                    className="flex items-center gap-2.5 text-left p-2 rounded-xl text-xs font-semibold text-slate-700 bg-slate-50 hover:bg-red-50 hover:text-red-700 hover:border-red-200 border border-slate-200/80 transition-all duration-150 group cursor-pointer active:scale-95"
                   >
                     <IconComponent className="w-3.5 h-3.5 text-slate-400 group-hover:text-red-600 flex-shrink-0" />
                     <span className="flex-1 truncate">{q.question}</span>
