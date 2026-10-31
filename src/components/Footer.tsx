@@ -114,28 +114,34 @@ export default function Footer() {
               </div>
             </div>
 
+            {/* Social Media: Clean icon buttons linking directly to profiles */}
             <div className="pt-2">
-              <span className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-2">
-                Redes Sociales:
+              <span className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-2.5">
+                Síguenos en Redes:
               </span>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2.5">
                 <a
                   href={workshopConfig.socialLinks.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-xs text-slate-300 hover:text-pink-400 transition-colors"
+                  aria-label="Instagram oficial"
+                  title="Visitar Instagram"
+                  className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 hover:border-pink-500 hover:bg-pink-500/10 text-slate-300 hover:text-pink-400 flex items-center justify-center transition-all shadow-sm group"
                 >
-                  <Instagram className="w-3.5 h-3.5 text-pink-500" />
-                  <span>@qrmoon.rd</span>
+                  <Instagram className="w-4 h-4 group-hover:scale-110 transition-transform" />
                 </a>
-                <span className="text-slate-600">•</span>
+
                 <a
                   href={workshopConfig.socialLinks.tiktok}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-xs text-slate-300 hover:text-white transition-colors"
+                  aria-label="TikTok oficial"
+                  title="Visitar TikTok"
+                  className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-600 hover:bg-slate-800 text-slate-300 hover:text-white flex items-center justify-center transition-all shadow-sm group"
                 >
-                  <span>@gato_colonial</span>
+                  <svg className="w-4 h-4 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.82 4.46 6.27 6.27 0 0 0 1.88-4.46V8.76a8.2 8.2 0 0 0 4.79 1.54v-3.4c-.3.003-.6-.07-.9-.21Z" />
+                  </svg>
                 </a>
               </div>
             </div>
