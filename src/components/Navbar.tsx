@@ -43,7 +43,7 @@ export default function Navbar() {
           {/* Brand Logo */}
           <a
             href="#inicio"
-            className="flex items-center gap-3 group focus:outline-none flex-shrink-0"
+            className="flex items-center gap-3 group focus:outline-none flex-shrink-0 mr-2 sm:mr-4 lg:mr-8"
             aria-label="Ir al inicio de Taller Mecánico RD"
           >
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center text-white shadow-md shadow-red-900/30 group-hover:scale-105 transition-transform duration-200 flex-shrink-0">
@@ -59,16 +59,16 @@ export default function Navbar() {
             </div>
           </a>
 
-          {/* Desktop Navigation Links (Visible on xl screens and above) */}
+          {/* Desktop Navigation Links */}
           <nav
-            className="hidden xl:flex items-center gap-6 2xl:gap-8 mx-4"
+            className="hidden lg:flex items-center gap-4 xl:gap-6 2xl:gap-8 mx-auto"
             aria-label="Navegación principal"
           >
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-semibold text-slate-300 hover:text-white transition-colors duration-200 relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-red-500 hover:after:w-full after:transition-all after:duration-200 whitespace-nowrap"
+                className="text-xs xl:text-sm font-semibold text-slate-300 hover:text-white transition-colors duration-200 relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-red-500 hover:after:w-full after:transition-all after:duration-200 whitespace-nowrap"
               >
                 {link.label}
               </a>
@@ -102,7 +102,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="xl:hidden p-2 text-slate-300 hover:text-white hover:bg-slate-800 rounded-xl focus:outline-none transition-colors"
+              className="lg:hidden p-2 text-slate-300 hover:text-white hover:bg-slate-800 rounded-xl focus:outline-none transition-colors"
               aria-expanded={isOpen}
               aria-label="Abrir menú de navegación"
             >
@@ -114,7 +114,7 @@ export default function Navbar() {
 
       {/* Mobile/Tablet Menu Dropdown */}
       {isOpen && (
-        <div className="xl:hidden bg-slate-900 border-b border-slate-800 px-4 sm:px-6 pt-3 pb-6 space-y-4 animate-in slide-in-from-top-4 duration-200 shadow-2xl">
+        <div className="lg:hidden bg-slate-900 border-b border-slate-800 px-4 sm:px-6 pt-3 pb-6 space-y-4 animate-in slide-in-from-top-4 duration-200 shadow-2xl">
           <div className="flex flex-col space-y-1">
             {navLinks.map((link) => (
               <a

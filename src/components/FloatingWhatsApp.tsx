@@ -10,7 +10,7 @@ export default function FloatingWhatsApp() {
   const whatsappUrl = buildWhatsAppUrl();
 
   return (
-    <div className="fixed bottom-24 right-5 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end">
+    <div className="fixed bottom-20 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end">
       {/* Tooltip bubble on desktop */}
       {showTooltip && (
         <div className="hidden sm:flex items-center gap-2 mb-2 bg-slate-900 text-white text-xs font-semibold px-3 py-1.5 rounded-xl shadow-lg border border-slate-700 animate-in fade-in slide-in-from-bottom-2 duration-300">

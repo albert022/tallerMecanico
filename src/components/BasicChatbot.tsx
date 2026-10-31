@@ -132,15 +132,15 @@ export default function BasicChatbot() {
   return (
     <>
       {/* Floating Launcher Button */}
-      <div className="fixed bottom-24 right-5 sm:bottom-6 sm:right-24 z-30">
+      <div className="fixed bottom-20 left-4 sm:bottom-6 sm:left-auto sm:right-28 z-40">
         {!isOpen && (
           <button
             type="button"
             onClick={() => setIsOpen(true)}
-            className="flex items-center gap-2.5 bg-slate-900 hover:bg-slate-800 text-white px-4 py-3 rounded-full shadow-2xl border border-slate-700 transition-all duration-300 hover:scale-105 group"
+            className="flex items-center gap-2.5 bg-slate-900 hover:bg-slate-800 text-white px-3 sm:px-4 py-2.5 sm:py-3 rounded-full shadow-2xl border border-slate-700 transition-all duration-300 hover:scale-105 group"
             aria-label="Abrir asistente de preguntas frecuentes"
           >
-            <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white">
+            <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white flex-shrink-0">
               <Bot className="w-4 h-4" />
             </div>
             <div className="hidden sm:flex flex-col text-left">
@@ -156,7 +156,7 @@ export default function BasicChatbot() {
         <div
           role="dialog"
           aria-label="Asistente de preguntas frecuentes"
-          className="fixed bottom-20 sm:bottom-24 right-3 sm:right-6 z-50 w-[94vw] sm:w-[390px] h-[520px] max-h-[85vh] bg-white rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden animate-in fade-in slide-in-from-bottom-5 duration-300"
+          className="fixed bottom-20 sm:bottom-24 left-3 right-3 sm:left-auto sm:right-6 z-50 w-auto sm:w-[390px] h-[520px] max-h-[80vh] bg-white rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden animate-in fade-in slide-in-from-bottom-5 duration-300"
         >
           {/* Header */}
           <div className="bg-slate-900 text-white p-4 flex items-center justify-between border-b border-slate-800 flex-shrink-0">

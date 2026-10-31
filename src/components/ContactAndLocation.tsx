@@ -123,7 +123,7 @@ export default function ContactAndLocation() {
                   rel="noopener noreferrer"
                   aria-label="Instagram oficial"
                   title="Visitar Instagram"
-                  className="w-12 h-12 rounded-xl bg-white border border-slate-200 hover:border-pink-500 hover:bg-pink-50 text-pink-600 flex items-center justify-center transition-all shadow-sm group"
+                  className="flex-1 h-12 rounded-xl bg-white border border-slate-200 hover:border-pink-500 hover:bg-pink-50 text-pink-600 flex items-center justify-center transition-all shadow-sm group"
                 >
                   <Instagram className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 </a>
@@ -133,7 +133,7 @@ export default function ContactAndLocation() {
                   rel="noopener noreferrer"
                   aria-label="TikTok oficial"
                   title="Visitar TikTok"
-                  className="w-12 h-12 rounded-xl bg-white border border-slate-200 hover:border-slate-800 hover:bg-slate-100 text-slate-800 hover:text-black flex items-center justify-center transition-all shadow-sm group"
+                  className="flex-1 h-12 rounded-xl bg-white border border-slate-200 hover:border-slate-800 hover:bg-slate-100 text-slate-800 hover:text-black flex items-center justify-center transition-all shadow-sm group"
                 >
                   <svg className="w-5 h-5 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
                     <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.82 4.46 6.27 6.27 0 0 0 1.88-4.46V8.76a8.2 8.2 0 0 0 4.79 1.54v-3.4c-.3.003-.6-.07-.9-.21Z" />
