@@ -112,7 +112,7 @@ export const workshopConfig: WorkshopConfig = {
       description: "Inspección y reparación del sistema de frenado.",
       iconName: "Disc",
       imageUrl:
-        "https://images.unsplash.com/photo-1600790142055-619df03207e6?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1761040100230-8c8e6fc64638?auto=format&fit=crop&w=800&q=80",
       whatsappMessage:
         "¡Hola! Quisiera solicitar una cotización y saber más detalles del servicio. (QRMOON) (Taller Mecánico RD)",
     },
@@ -155,7 +155,7 @@ export const workshopConfig: WorkshopConfig = {
       shortDescription:
         "Inspección integral de seguridad y montaje de pastillas cerámicas de alta durabilidad.",
       imageUrl:
-        "https://images.unsplash.com/photo-1600790142055-619df03207e6?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1769181067373-fcb1ceb1c84e?auto=format&fit=crop&w=800&q=80",
     },
     {
       id: "trabajo-2",
