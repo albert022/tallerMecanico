@@ -40,10 +40,10 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Brand Logo */}
+          {/* Brand Logo with ample right spacing */}
           <a
             href="#inicio"
-            className="flex items-center gap-3 group focus:outline-none flex-shrink-0"
+            className="flex items-center gap-3 group focus:outline-none flex-shrink-0 mr-8 xl:mr-14"
             aria-label="Ir al inicio de Taller Mecánico RD"
           >
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center text-white shadow-md shadow-red-900/30 group-hover:scale-105 transition-transform duration-200">
@@ -61,32 +61,31 @@ export default function Navbar() {
             </div>
           </a>
 
-          {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-5 xl:gap-7 ml-auto" aria-label="Navegación principal">
+          {/* Desktop Navigation Links Centered with Generous Padding */}
+          <nav
+            className="hidden lg:flex items-center gap-6 xl:gap-8 mx-auto px-4"
+            aria-label="Navegación principal"
+          >
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200 relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-red-500 hover:after:w-full after:transition-all after:duration-200 whitespace-nowrap"
+                className="text-sm font-semibold text-slate-300 hover:text-white transition-colors duration-200 relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-red-500 hover:after:w-full after:transition-all after:duration-200 whitespace-nowrap"
               >
                 {link.label}
               </a>
             ))}
           </nav>
 
-          {/* Desktop Right CTA - Clearly separated with divider and generous spacing */}
-          <div className="hidden lg:flex items-center gap-4 ml-6 xl:ml-8 pl-6 xl:pl-8 border-l border-slate-700/70 flex-shrink-0">
+          {/* Desktop Right CTA Separated with Divider */}
+          <div className="hidden lg:flex items-center gap-4 ml-8 xl:ml-12 pl-6 xl:pl-8 border-l border-slate-700/70 flex-shrink-0">
             <a
               href={`tel:${workshopConfig.phoneRaw}`}
-              className="flex items-center gap-2.5 text-xs font-semibold text-slate-200 hover:text-white bg-slate-800/80 hover:bg-slate-700 px-4 py-2.5 rounded-xl border border-slate-700 hover:border-slate-600 transition-all shadow-sm"
+              className="hidden 2xl:flex items-center gap-2 text-xs font-semibold text-slate-200 hover:text-white bg-slate-800/80 hover:bg-slate-700 px-3.5 py-2.5 rounded-xl border border-slate-700 transition-colors"
+              title={`Llamar: ${workshopConfig.phone}`}
             >
-              <div className="w-6 h-6 rounded-lg bg-red-600/20 text-red-400 flex items-center justify-center flex-shrink-0">
-                <Phone className="w-3.5 h-3.5" />
-              </div>
-              <div className="flex flex-col text-left leading-tight">
-                <span className="text-[10px] text-slate-400 font-normal">Llámanos</span>
-                <span className="font-bold">{workshopConfig.phone}</span>
-              </div>
+              <Phone className="w-3.5 h-3.5 text-red-400" />
+              <span>{workshopConfig.phone}</span>
             </a>
 
             <a
@@ -141,7 +140,6 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Clear visual separation between Contact link and Call button */}
           <div className="pt-4 border-t border-slate-800/90 flex flex-col gap-3">
             <a
               href={`tel:${workshopConfig.phoneRaw}`}
